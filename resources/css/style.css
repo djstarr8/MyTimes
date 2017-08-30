@@ -1,0 +1,55 @@
+.header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.header p{
+  color: MediumAquamarine;
+}
+
+.header a{
+  color: black;
+}
+
+.header span,
+.header img{
+  margin: 10px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+div {
+  border: 1px dotted black;
+}
+.container {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.large {
+  width: 630px;
+  min-height: 500px;
+}
+
+.column.medium {
+  width: 300px;
+  min-height: 500px;
+}
+
+.column.small {
+  width: 240px;
+  min-height: 500px;
+}
