@@ -7,6 +7,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  position: fixed;
+  background: white;
+  margin-top: 0px;
+  z-index: 10;
 }
 
 .header p{
@@ -32,25 +36,74 @@ div {
 }
 .container {
   display: flex;
+  width: 1300px;
+  margin: 0 auto;
   justify-content: space-around;
+  position: relative;
+  top: 85px;
 }
 
+.stories {
+  display: flex;
+  width: 630px;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-flow: wrap column;
+}
+
+.text {
+  min-height: 250px;
+}
+
+#headline {
+  background: url(../images/img-story-main.png) no-repeat;
+  font-size: 40px;
+  justify-content: flex-start;
+}
+
+#earth {
+  background: url(../images/img-story-2.png) no-repeat;
+}
+
+#camera {
+  background: url(../images/img-story-3.png) no-repeat;
+}
+
+#cat {
+  background: url(../images/img-story-1.png) no-repeat;
+}
+
+.picture-background {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  height: 300px;
+  align-items: flex-start;
+  justify-content: center;
+}
 .column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 .column.large {
   width: 630px;
-  min-height: 500px;
+  flex-flow: row wrap;
 }
 
 .column.medium {
   width: 300px;
-  min-height: 500px;
 }
 
 .column.small {
   width: 240px;
-  min-height: 500px;
 }
